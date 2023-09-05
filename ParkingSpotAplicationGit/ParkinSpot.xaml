@@ -1,0 +1,27 @@
+﻿<Window x:Class="ParkingSpotAplication.ParkinSpot"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ParkingSpotAplication"
+        mc:Ignorable="d"
+        Title="ParkinSpot" Height="350" Width="400">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black"/>
+                <GradientStop Color="#FF3CA4DF" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Label Content="ParkingSpots" HorizontalAlignment="Left" Margin="29,26,0,0" VerticalAlignment="Top" Height="28" RenderTransformOrigin="1.714,-3.561" Width="115" Background="#FFEED3D3"/>
+        <Button x:Name="buttonDelete" Content="Delete" HorizontalAlignment="Left" Margin="29,263,0,0" VerticalAlignment="Top" Height="36" Width="99" Click="buttonDelete_Click" Background="#FFDD2929"/>
+        <Button x:Name="buttonCreateParkingSpot" Content="Create" HorizontalAlignment="Left" Margin="154,263,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.592,1.609" Height="36" Width="86" Click="buttonCreateParkingSpot_Click" Background="#FF44DF42"/>
+        <Button x:Name="UpdatePakringSpot" Content="Update" HorizontalAlignment="Left" Margin="260,263,0,0" VerticalAlignment="Top" Height="36" Width="95" Click="UpdatePakringSpot_Click" Background="#FF280F8F"/>
+        <ListBox x:Name="lbParkingSpots"  Margin="29,74,256,100" MouseDoubleClick="ListBoxDoubleClick"/>
+        <Label Content="Name" HorizontalAlignment="Center" Margin="0,26,0,0" VerticalAlignment="Top" Height="28" Width="58" Background="#FFDCB0B0"/>
+        <TextBox x:Name="txtParkingSpot" HorizontalAlignment="Left" Margin="258,27,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="27" Width="97"/>
+        <ListBox x:Name="lbStatus"  Margin="171,130,45,100" MouseDoubleClick="lbStatus_SelectionChanged"/>
+        <Label Content="Status" HorizontalAlignment="Left" Margin="171,84,0,0" VerticalAlignment="Top" Height="30" Width="114" Background="#FFE6A9A9"/>
+
+    </Grid>
+</Window>

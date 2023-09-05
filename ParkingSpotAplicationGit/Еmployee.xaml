@@ -1,0 +1,35 @@
+﻿<Window x:Class="ParkingSpotAplication.Еmployee"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ParkingSpotAplication"
+        mc:Ignorable="d"
+        Title="Еmployee" Height="450" Width="700">
+    <Grid>
+        <Grid.Background>
+            <RadialGradientBrush>
+                <GradientStop Color="#FFDAE6F0"/>
+                <GradientStop Color="#FF429CE2" Offset="1"/>
+            </RadialGradientBrush>
+        </Grid.Background>
+        <Label Content="Username" HorizontalAlignment="Left" Height="35" Margin="265,53,0,0" VerticalAlignment="Top" Width="84"/>
+        <Label Content="Passowrd" HorizontalAlignment="Left" Margin="265,104,0,0" VerticalAlignment="Top" Width="84" Height="32"/>
+        <Label Content="First Name" HorizontalAlignment="Left" Height="35" Margin="265,153,0,0" VerticalAlignment="Top" Width="84"/>
+        <Label Content="Last  Name" HorizontalAlignment="Left" Height="35" Margin="265,0,0,0" VerticalAlignment="Center" Width="84"/>
+        <Label Content="Email" HorizontalAlignment="Left" Margin="265,255,0,0" VerticalAlignment="Top" Height="35" Width="67"/>
+        <TextBox x:Name="txtUsername" HorizontalAlignment="Left" Margin="380,56,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="135" Height="29"/>
+        <TextBox x:Name="txtPassword" HorizontalAlignment="Left" Margin="380,104,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="135" Height="29"/>
+        <TextBox x:Name="txtFirstname" HorizontalAlignment="Left" Margin="380,153,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="135" Height="29"/>
+        <TextBox x:Name="txtLastname" HorizontalAlignment="Left" Margin="380,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="135" Height="29"/>
+        <TextBox x:Name="txtEmail" HorizontalAlignment="Left" Margin="380,255,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="135" Height="29"/>
+        <ListBox x:Name="lb_Userslist" HorizontalAlignment="Left" Height="234" Margin="32,56,0,0" VerticalAlignment="Top" Width="193" MouseDoubleClick="SelectUser_DoubleClick"/>
+        <Button x:Name="buttonCreateNewEmployee" Content="Create new Employe" HorizontalAlignment="Left" Margin="192,361,0,0" VerticalAlignment="Top" Height="49" Width="158" Click="buttonCreateNewEmployee_Click" Background="#FF1A09C9"/>
+        <Button x:Name="buttonChangeEmployee" Content="Change  Employe profile" HorizontalAlignment="Left" Margin="371,361,0,0" VerticalAlignment="Top" Height="49" Width="153" Click="buttonChangeEmployee_Click" Background="#FF16C239"/>
+        <CheckBox x:Name="Chb_AddEmployee" Content="Add Employe" HorizontalAlignment="Left" Margin="50,376,0,0" VerticalAlignment="Top" Height="29" Width="175" Checked="Chb_AddEmployee_Checked"/>
+        <ListBox x:Name="lbRight" HorizontalAlignment="Left" Height="40" Margin="96,311,0,0" VerticalAlignment="Top" Width="161"/>
+        <Label Content="Riight" HorizontalAlignment="Left" Margin="32,316,0,0" VerticalAlignment="Top" Height="35" Width="51"/>
+        <Button x:Name="buttonDeleteUser" Content="Delete User" HorizontalAlignment="Left" Margin="548,361,0,0" VerticalAlignment="Top" Height="49" Width="118" Click="buttonDeleteUser_Click" Background="#FFD61919"/>
+
+    </Grid>
+</Window>
